@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: process.env.NODE_ENV === 'production' ? '/eportfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/eportfolio' : '',
   images: {
     unoptimized: true,
   },

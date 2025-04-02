@@ -2,7 +2,7 @@
   "name": "eportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://username.github.io/eportfolio",
+  "homepage": "https://rudrasingh500.github.io/eportfolio",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
