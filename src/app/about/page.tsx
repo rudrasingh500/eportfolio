@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import PageTransition from '@/components/animations/PageTransition';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -27,7 +28,7 @@ export default function About() {
                 className="w-full md:w-1/3"
               >
                 <div className="relative w-full aspect-square max-w-sm mx-auto rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-                    <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
+                    <Image src="/profile.png" alt="Profile" width={400} height={400} className="w-full h-full object-cover" />
                 </div>
               </motion.div>
 
@@ -42,13 +43,13 @@ export default function About() {
                 I am a Computer Engineering student at Georgia Tech, with threads in Information Internetworks and Cybersecurity, with a foundation in embedded systems, machine learning, and software development.
                 </p>
                 <p className="text-gray-700 mb-4">
-                Growing up, I've always been fascinated by technology and what it can do that we humans cannot do on our own. This fascination led me to pursue a degree in Computer Engineering at Georgia Tech, where I've been able to explore many aspects of computing and learn a broad set of skills.
+                Growing up, I&apos;ve always been fascinated by technology and what it can do that we humans cannot do on our own. This fascination led me to pursue a degree in Computer Engineering at Georgia Tech, where I&apos;ve been able to explore many aspects of computing and learn a broad set of skills.
                 </p>
                 <p className="text-gray-700 mb-4">
-                Throughout my academic life, I've been fortunate to work on multiple exciting projects and internships that have significantly benefited my abilities and professional goals. From creating an mmWave radar system for healthcare purposes to contributing to a patented wearable technology for defense applications, these experiences have cemented my enthusiasm for crafting unique products with my tech skills.
+                Throughout my academic life, I&apos;ve been fortunate to work on multiple exciting projects and internships that have significantly benefited my abilities and professional goals. From creating an mmWave radar system for healthcare purposes to contributing to a patented wearable technology for defense applications, these experiences have cemented my enthusiasm for crafting unique products with my tech skills.
                 </p>
                 <p className="text-gray-700">
-                Apart from coding and projects, I prefer staying active, experimenting with new tech, and watching TV shows. I'm fluent in English and Hindi and understand some French as well, and I enjoy using these languages to communicate with those I may otherwise not communicate with.
+                Apart from coding and projects, I prefer staying active, experimenting with new tech, and watching TV shows. I&apos;m fluent in English and Hindi and understand some French as well, and I enjoy using these languages to communicate with those I may otherwise not communicate with.
                 </p>
               </motion.div>
             </div>

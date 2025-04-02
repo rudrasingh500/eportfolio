@@ -80,8 +80,8 @@ export default function Skills() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Skills & Expertise</h1>
             <div className="h-1 w-20 bg-indigo-600 mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              I've developed a diverse set of technical skills through academic coursework, research internships, 
-              hackathons, and personal projects. Here's an overview of my capabilities across various domains.
+              I&apos;ve developed a diverse set of technical skills through academic coursework, research internships, 
+              hackathons, and personal projects. Here&apos;s an overview of my capabilities across various domains.
             </p>
           </motion.div>
 
@@ -175,7 +175,7 @@ export default function Skills() {
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Continuous Learning</h2>
             <p className="text-gray-700 mb-6">
-              I'm committed to continuous learning and skill development. Currently, I'm focusing on expanding my 
+              I&apos;m committed to continuous learning and skill development. Currently, I&apos;m focusing on expanding my 
               knowledge in these areas:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import PageTransition from '@/components/animations/PageTransition';
-import { useState } from 'react';
 
 export default function Contact() {
   
@@ -20,7 +19,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h1>
             <div className="h-1 w-20 bg-indigo-600 mx-auto mb-6"></div>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              I'm always open to discussing new projects, opportunities, or collaborations. 
+              I&apos;m always open to discussing new projects, opportunities, or collaborations. 
               Feel free to reach out using the contact form below or connect with me directly.
             </p>
           </motion.div>
@@ -103,7 +102,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Availability</h2>
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <p className="text-gray-700 mb-2">
-                    I'm generally available for meetings and calls during the following hours:
+                    I&apos;m generally available for meetings and calls during the following hours:
                   </p>
                   <ul className="text-gray-700 space-y-1">
                     <li><span className="font-medium">Monday - Friday:</span> 9:00 AM - 5:00 PM EST</li>

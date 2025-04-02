@@ -211,7 +211,7 @@ This is a pivotal move forward in how Turn It In is using AI to revolutionize th
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Interested in Collaboration?</h2>
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-              I'm always open to new project opportunities and collaborations. If you have an interesting project idea 
+              I&apos;m always open to new project opportunities and collaborations. If you have an interesting project idea 
               or would like to discuss potential collaboration, feel free to reach out.
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

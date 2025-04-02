@@ -31,7 +31,7 @@ export default function Career() {
                 As a Computer Engineering major in Cybersecurity and Information Internetworks, my professional aspiration in the long run is to be an industry-leading innovator where software development, machine learning, and cybersecurity intersect. My dream is to be the one who develops solutions that not only push technological limits but also address the most vital security and privacy issues.
                 </p>
                 <p className="text-gray-700">
-                Given my diverse experience in software development, machine learning, and embedded systems, I'm positioning myself to contribute to impactful projects that drive significant outcomes. Whether working with established tech companies, research institutions, or pursuing an independent venture in the future, I'm committed to continuous learning and self-improvement throughout the duration of my career.
+                Given my diverse experience in software development, machine learning, and embedded systems, I&apos;m positioning myself to contribute to impactful projects that drive significant outcomes. Whether working with established tech companies, research institutions, or pursuing an independent venture in the future, I&apos;m committed to continuous learning and self-improvement throughout the duration of my career.
                 </p>
               </div>
             </motion.div>
@@ -51,7 +51,7 @@ export default function Career() {
                   <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">2024-2028: Academic Foundation</h3>
                     <p className="text-gray-700 mb-3">
-                      Currently pursuing my Bachelor's in Computer Engineering at Georgia Tech with concentrations in Cybersecurity 
+                      Currently pursuing my Bachelor&apos;s in Computer Engineering at Georgia Tech with concentrations in Cybersecurity 
                       and Information Internetworks, and a minor in Fintech.
                     </p>
                     <ul className="list-disc pl-6 text-gray-700 space-y-1">
@@ -216,8 +216,8 @@ export default function Career() {
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Commitment to Growth</h2>
               <p className="text-gray-700">
-                I recognize that career paths often evolve, and I'm committed to remaining adaptable and open to new opportunities. 
-                By building a strong foundation in computer engineering, cybersecurity, and software development, I'm preparing 
+                I recognize that career paths often evolve, and I&apos;m committed to remaining adaptable and open to new opportunities. 
+                By building a strong foundation in computer engineering, cybersecurity, and software development, I&apos;m preparing 
                 myself to navigate the rapidly changing technology landscape and make meaningful contributions throughout my career.
               </p>
             </motion.div>

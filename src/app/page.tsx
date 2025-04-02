@@ -20,14 +20,14 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-                    Hi, I'm <span className="text-indigo-600">Rudra Singh</span>
+                    Hi, I&apos;m <span className="text-indigo-600">Rudra Singh</span>
                   </h1>
                   <h2 className="text-xl md:text-2xl text-gray-700 mb-6">
                     Computer Engineering Student at Georgia Tech
                   </h2>
                   <p className="text-gray-600 mb-8 text-lg">
                     Specializing in Cybersecurity and Information Internetworks with a passion for software development, 
-                    machine learning, and embedded systems. I'm dedicated to creating innovative solutions to complex problems.
+                    machine learning, and embedded systems. I&apos;m dedicated to creating innovative solutions to complex problems.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -180,7 +180,7 @@ export default function Home() {
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                I've developed a diverse set of skills throughout my academic and professional journey.
+                I&apos;ve developed a diverse set of skills throughout my academic and professional journey.
               </p>
             </motion.div>
 
@@ -279,7 +279,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Interested in working together?</h2>
                 <p className="text-indigo-100 text-lg">
-                  I'm always open to discussing new projects, opportunities, and collaborations.
+                  I&apos;m always open to discussing new projects, opportunities, and collaborations.
                 </p>
               </div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
