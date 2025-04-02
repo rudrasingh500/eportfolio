@@ -28,16 +28,10 @@ export default function Career() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">My Vision</h2>
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                 <p className="text-gray-700 mb-4">
-                  As a Computer Engineering student specializing in Cybersecurity and Information Internetworks, my long-term career 
-                  aspiration is to become a leading innovator at the intersection of software development, machine learning, and 
-                  cybersecurity. I aim to develop solutions that not only push technological boundaries but also address critical 
-                  challenges in security and privacy.
+                As a Computer Engineering major in Cybersecurity and Information Internetworks, my professional aspiration in the long run is to be an industry-leading innovator where software development, machine learning, and cybersecurity intersect. My dream is to be the one who develops solutions that not only push technological limits but also address the most vital security and privacy issues.
                 </p>
                 <p className="text-gray-700">
-                  With my diverse skill set spanning software development, machine learning, and embedded systems, I'm positioning 
-                  myself to contribute to cutting-edge projects that have meaningful impact. Whether working with established 
-                  technology companies, research institutions, or eventually founding my own venture, I'm committed to continuous 
-                  learning and growth throughout my career journey.
+                Given my diverse experience in software development, machine learning, and embedded systems, I'm positioning myself to contribute to impactful projects that drive significant outcomes. Whether working with established tech companies, research institutions, or pursuing an independent venture in the future, I'm committed to continuous learning and self-improvement throughout the duration of my career.
                 </p>
               </div>
             </motion.div>
@@ -55,7 +49,7 @@ export default function Career() {
                 <div className="relative">
                   <div className="absolute -left-10 mt-1.5 h-6 w-6 rounded-full border-2 border-indigo-600 bg-white"></div>
                   <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">2023-2028: Academic Foundation</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">2024-2028: Academic Foundation</h3>
                     <p className="text-gray-700 mb-3">
                       Currently pursuing my Bachelor's in Computer Engineering at Georgia Tech with concentrations in Cybersecurity 
                       and Information Internetworks, and a minor in Fintech.
@@ -76,7 +70,7 @@ export default function Career() {
                   <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">2028-2031: Early Career Development</h3>
                     <p className="text-gray-700 mb-3">
-                      After graduation, I plan to join a technology company or research institution to gain practical experience 
+                      After graduation, I plan to join a tech company or research instite to gain experience in relevant fields
                       and deepen my expertise.
                     </p>
                     <ul className="list-disc pl-6 text-gray-700 space-y-1">

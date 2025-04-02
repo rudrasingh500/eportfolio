@@ -5,26 +5,7 @@ import PageTransition from '@/components/animations/PageTransition';
 import { useState } from 'react';
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real implementation, this would send the form data to a backend
-    console.log('Form submitted:', formState);
-    alert('Thank you for your message! This is a demo form - in the actual website, this would send your message.');
-  };
+  
 
   return (
     <PageTransition>
@@ -44,7 +25,7 @@ export default function Contact() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -119,14 +100,13 @@ export default function Contact() {
               </div>
               
               <div className="mt-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Office Hours</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Availability</h2>
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <p className="text-gray-700 mb-2">
                     I'm generally available for meetings and calls during the following hours:
                   </p>
                   <ul className="text-gray-700 space-y-1">
                     <li><span className="font-medium">Monday - Friday:</span> 9:00 AM - 5:00 PM EST</li>
-                    <li><span className="font-medium">Weekends:</span> By appointment</li>
                   </ul>
                   <p className="text-gray-700 mt-4">
                     Please note that response times may vary due to academic commitments. I strive to respond to all 
@@ -136,91 +116,7 @@ export default function Contact() {
               </div>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Me a Message</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formState.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formState.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formState.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formState.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  ></textarea>
-                </div>
-                
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors"
-                >
-                  Send Message
-                </motion.button>
-              </form>
-              
-              <div className="mt-8 text-center text-gray-600 text-sm">
-                <p>
-                  Note: This is a demo form for the ePortfolio project. In the actual implementation, 
-                  this form would be connected to a backend service to process submissions.
-                </p>
-              </div>
-            </motion.div>
+            
           </div>
         </div>
       </div>

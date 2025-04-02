@@ -31,7 +31,7 @@ export default function Resume() {
               
               <div className="flex justify-center mb-8">
                 <motion.a 
-                  href="https://drive.google.com/file/d/10IwFYIk5H62WeRJpg3-gdWbREfZq94MV/download"
+                  href="https://drive.google.com/uc?export=download&id=10IwFYIk5H62WeRJpg3-gdWbREfZq94MV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors"
@@ -103,7 +103,7 @@ export default function Resume() {
                     </div>
                     <p className="text-gray-700 italic mb-2">Embedded Computing Research Intern</p>
                     <p className="text-gray-700">
-                      Contributed to a patent-pending project for tracking munitions use, developing embedded Python code for wearable devices.
+                      Contributed to a patented project for tracking munitions use, developing embedded Python code for wearable devices.
                     </p>
                   </div>
                 </div>

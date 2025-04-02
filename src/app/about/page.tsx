@@ -27,7 +27,7 @@ export default function About() {
                 className="w-full md:w-1/3"
               >
                 <div className="relative w-full aspect-square max-w-sm mx-auto rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-500">Profile Image Placeholder</div>
+                    <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
                 </div>
               </motion.div>
 
@@ -39,23 +39,16 @@ export default function About() {
               >
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Rudra Singh</h2>
                 <p className="text-gray-700 mb-4">
-                  I'm an enthusiastic Computer Engineering student at Georgia Tech, specializing in Cybersecurity and Information Internetworks, 
-                  with a strong foundation in software development, machine learning, and embedded systems.
+                I am a Computer Engineering student at Georgia Tech, with threads in Information Internetworks and Cybersecurity, with a foundation in embedded systems, machine learning, and software development.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Born and raised in Alpharetta, Georgia, I've always been fascinated by technology and its potential to solve complex problems. 
-                  This curiosity led me to pursue Computer Engineering at Georgia Tech, where I've been able to explore various aspects of computing 
-                  and develop a diverse skill set.
+                Growing up, I've always been fascinated by technology and what it can do that we humans cannot do on our own. This fascination led me to pursue a degree in Computer Engineering at Georgia Tech, where I've been able to explore many aspects of computing and learn a broad set of skills.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Throughout my academic journey, I've had the opportunity to work on exciting projects and internships that have shaped my 
-                  technical abilities and professional outlook. From developing an mmWave radar system for healthcare applications to contributing 
-                  to a patent-pending wearable device for military use, these experiences have reinforced my passion for creating innovative solutions.
+                Throughout my academic life, I've been fortunate to work on multiple exciting projects and internships that have significantly benefited my abilities and professional goals. From creating an mmWave radar system for healthcare purposes to contributing to a patented wearable technology for defense applications, these experiences have cemented my enthusiasm for crafting unique products with my tech skills.
                 </p>
                 <p className="text-gray-700">
-                  When I'm not coding or working on technical projects, I enjoy staying active, exploring new technologies, and connecting with 
-                  fellow tech enthusiasts. I'm fluent in English and Hindi, with some knowledge of French, which helps me connect with people 
-                  from diverse backgrounds.
+                Apart from coding and projects, I prefer staying active, experimenting with new tech, and watching TV shows. I'm fluent in English and Hindi and understand some French as well, and I enjoy using these languages to communicate with those I may otherwise not communicate with.
                 </p>
               </motion.div>
             </div>
@@ -91,14 +84,14 @@ export default function About() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Georgia Tech Grand Challenges</h3>
                   <p className="text-gray-700">
                     Participating in collaborative problem-solving initiatives focused on addressing significant societal challenges through 
-                    innovative technological solutions.
+                    thought out, emphatetic, and unique solutions.
                   </p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Startup Exchange at Georgia Tech</h3>
                   <p className="text-gray-700">
                     Engaging with a community of student entrepreneurs and innovators to develop entrepreneurial skills and explore startup 
-                    opportunities in the tech industry.
+                    opportunities.
                   </p>
                 </div>
               </div>
@@ -117,10 +110,10 @@ export default function About() {
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
                   <li>Exploring emerging technologies in AI and machine learning</li>
-                  <li>Contributing to open-source projects</li>
+                  <li>Watching TV shows and playing video games</li>
                   <li>Participating in hackathons and coding competitions</li>
                   <li>Staying active through sports and outdoor activities</li>
-                  <li>Reading about technological innovations and their societal impacts</li>
+                  <li>Reading different kinds of books including </li>
                 </ul>
               </div>
             </motion.div>

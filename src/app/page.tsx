@@ -51,7 +51,13 @@ export default function Home() {
                   className="relative w-full aspect-square max-w-md mx-auto"
                 >
                   <div className="w-full h-full rounded-full overflow-hidden bg-gray-300 flex items-center justify-center">
-                    <div className="text-gray-500 text-lg">Profile Image Placeholder</div>
+                    <Image
+                      src="/profile.png"
+                      alt="Profile picture"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -141,9 +147,9 @@ export default function Home() {
                   <div className="text-gray-500">Project Image Placeholder</div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">mmWave Radar System</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Discovery Project</h3>
                   <p className="text-gray-600 mb-4">
-                    An mmWave radar system for tracking and identifying nurses in a hospital environment using gait analysis.
+                  My Discovery Project is currently in development. Check back once my project is complete to see the full details.
                   </p>
                   <Link href="/projects" className="text-indigo-600 font-medium hover:text-indigo-700 transition-colors">
                     Learn more →
