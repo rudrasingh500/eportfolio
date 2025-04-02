@@ -98,7 +98,13 @@ export default function Home() {
                 className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-500">Project Image Placeholder</div>
+                  <Image
+                    src="/images/projects/swolemate/1.jpg"
+                    alt="SwoleMate Project"
+                    width={400}
+                    height={300}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">SwoleMate - AI Fitness Trainer</h3>
@@ -121,7 +127,15 @@ export default function Home() {
                 className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-500">Project Image Placeholder</div>
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/images/projects/readable/1.jpg"
+                      alt="Readable Project"
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Readable - AI Reading Companion</h3>
