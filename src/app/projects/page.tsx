@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import PageTransition from '@/components/animations/PageTransition';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '@/utils/imageUtils';
 
 export default function Projects() {
   const projects = [
@@ -43,9 +44,9 @@ Another important design consideration for us was privacy. Video is processed en
 UgaHacks X project reached the next level with continuous development and improvements. Both the exercise library is being expanded, accuracy of the form detection system is being improved, and features for specialized populations (rehabilitation patients, senior citizens) are being developed. The use cases range from general fitness to physical therapy, sports training, and remote coaching scenarios.`,
       technologies: ["Python", "OpenCV", "MediaPipe", "TensorFlow", "LSTM", "Google Gemini API"],
       images: [
-        "/images/projects/swolemate/1.jpg",
-        "/images/projects/swolemate/2.jpg",
-        "/images/projects/swolemate/3.jpg"
+        getImagePath("/images/projects/swolemate/1.jpg"),
+        getImagePath("/images/projects/swolemate/2.jpg"),
+        getImagePath("/images/projects/swolemate/3.jpg")
       ]
     },
     {
@@ -88,9 +89,9 @@ We had a multi-step user testing process involving different groups of users (el
 This is a pivotal move forward in how Turn It In is using AI to revolutionize the reading experience to be more meaningful, interesting, and effective to learners from all walks of life. Inspiring reading in children and building confidence to ensure young children thrive through innovative educational design and leading-edge technology.`,
       technologies: ["Next.js", "FastAPI", "MongoDB", "Anthropic API", "React", "TypeScript"],
       images: [
-        "/images/projects/readable/1.jpg",
-        "/images/projects/readable/2.jpg",
-        "/images/projects/readable/3.jpg"
+        getImagePath("/images/projects/readable/1.jpg"),
+        getImagePath("/images/projects/readable/2.jpg"),
+        getImagePath("/images/projects/readable/3.jpg")
       ]
     },
   ];

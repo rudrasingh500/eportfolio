@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import PageTransition from '@/components/animations/PageTransition';
 import Image from 'next/image';
+import { getImagePath } from '@/utils/imageUtils';
 
 export default function About() {
   return (
@@ -28,7 +29,7 @@ export default function About() {
                 className="w-full md:w-1/3"
               >
                 <div className="relative w-full aspect-square max-w-sm mx-auto rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-                    <Image src="/profile.png" alt="Profile" width={400} height={400} className="w-full h-full object-cover" />
+                    <Image src={getImagePath("/profile.png")} alt="Profile" width={400} height={400} className="w-full h-full object-cover" />
                 </div>
               </motion.div>
 

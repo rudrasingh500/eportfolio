@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import PageTransition from '@/components/animations/PageTransition';
 import Image from 'next/image';
+import { getImagePath } from '@/utils/imageUtils';
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
                 >
                   <div className="w-full h-full rounded-full overflow-hidden bg-gray-300 flex items-center justify-center">
                     <Image
-                      src="/profile.png"
+                      src={getImagePath("/profile.png")}
                       alt="Profile picture"
                       fill
                       className="object-cover"
@@ -99,7 +100,7 @@ export default function Home() {
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
                   <Image
-                    src="/images/projects/swolemate/1.jpg"
+                    src={getImagePath("/images/projects/swolemate/1.jpg")}
                     alt="SwoleMate Project"
                     width={400}
                     height={300}
@@ -129,7 +130,7 @@ export default function Home() {
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <Image
-                      src="/images/projects/readable/1.jpg"
+                      src={getImagePath("/images/projects/readable/1.jpg")}
                       alt="Readable Project"
                       width={400}
                       height={300}
