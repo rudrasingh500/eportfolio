@@ -13,9 +13,9 @@ export function getImagePath(path: string): string {
     return path;
   }
   
-  // In production, prepend the base path
-  const basePath = process.env.NODE_ENV === 'production' ? '/eportfolio' : '';
-  
+  // Always prepend the base path defined in next.config.js
+  const basePath = '/eportfolio';
+
   // Ensure path starts with a slash
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   

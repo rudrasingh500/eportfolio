@@ -159,12 +159,18 @@ export default function Home() {
                 className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-500">Project Image Placeholder</div>
+                  <Image
+                    src={getImagePath("/images/projects/discovery_project/arduino_image_2.webp")}
+                    alt="Morse Code Converter Project"
+                    width={400}
+                    height={300}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Discovery Project</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Morse Code Converter</h3>
                   <p className="text-gray-600 mb-4">
-                  My Discovery Project is currently in development. Check back once my project is complete to see the full details.
+                    An 8-week ECE project that translates text to Morse code using mBed, featuring LED and buzzer outputs with adjustable transmission speed.
                   </p>
                   <Link href="/projects" className="text-indigo-600 font-medium hover:text-indigo-700 transition-colors">
                     Learn more →

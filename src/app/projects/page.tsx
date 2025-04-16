@@ -189,18 +189,138 @@ This is a pivotal move forward in how Turn It In is using AI to revolutionize th
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-16 bg-indigo-50 p-8 rounded-lg shadow-sm"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Discovery Project</h2>
-            <p className="text-gray-700 mb-6">
-              This section will feature my Individual Discovery Project as required by the ePortfolio assignment. 
-              The project will be added here once completed, showcasing my work with detailed descriptions, images, 
-              and potentially a presentation or video demonstration.
-            </p>
-            <div className="bg-white p-6 rounded-lg border border-indigo-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Coming Soon</h3>
-              <p className="text-gray-700">
-                My Discovery Project is currently in development. Check back later for a comprehensive showcase of this 
-                project, including an overview, technical details, challenges faced, solutions implemented, and results achieved.
-              </p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Discovery Project: Morse Code Converter</h2>
+            <div className="space-y-8 text-gray-700">
+              
+              <section>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">The Problem & Initial Idea</h3>
+                <p className="mb-4">
+                  The Discovery Project presented an exciting 8-week opportunity to dive deep into a practical Electrical and Computer Engineering (ECE) challenge and cultivate a new skill set. Drawing inspiration from a prior internship where I witnessed the potential of advanced sensor technologies in action, I initially set my sights on a highly ambitious goal: constructing an mmWave (millimeter-wave) radar system for human presence detection and tracking. The vision was to create a sophisticated system that could precisely identify and monitor human movement within a defined space, leveraging the unique capabilities of mmWave frequencies for high-resolution sensing, even through certain materials. This technology held immense appeal due to its potential applications in areas like advanced smart home automation (e.g., occupancy sensing for lighting/HVAC control), enhanced security systems, and even non-invasive healthcare monitoring (like fall detection). I was particularly fascinated by the intricate blend of specialized hardware design, complex signal processing algorithms needed to interpret the reflected waves, and the real-time data interpretation required for accurate tracking, viewing it as a significant but ultimately rewarding technical hurdle that would push my ECE knowledge.
+                </p>
+              </section>
+
+              <section>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">The Process: Planning and Setbacks</h3>
+                <p className="mb-4">
+                  Embarking on the mmWave project, the initial weeks were a whirlwind of intensive research and meticulous planning. I delved into academic papers, technical datasheets for sensors like Texas Instruments&apos; IWR series, and numerous online forums to grasp the nuances of mmWave technology, antenna design considerations, and the signal processing chain (FFT, beamforming, target detection algorithms). I explored suitable microcontrollers, weighing options like powerful ESP32 variants against Raspberry Pi boards for their processing capabilities and interface options (SPI, UART). I sketched out a preliminary system architecture, detailing how the sensor module, microcontroller, and potentially a power management IC would interconnect. A critical part of this phase was creating a detailed 8-week Gantt chart, allocating specific weeks for component sourcing, PCB design (if needed), hardware assembly, firmware development, algorithm implementation (likely starting with vendor-provided libraries), and rigorous testing. Recognizing the notorious lead times for specialized components, especially mmWave sensors which often ship from international suppliers, I initiated the procurement process almost immediately.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                  <div className="h-64 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/arduino_image_2.webp")}
+                      alt="Arduino Uno R4 planning stage with components"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-2"
+                    />
+                    <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">Initial planning with the Arduino Uno R4 WiFi.</p>
+                  </div>
+                   <div className="h-64 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/arduino_Img3.webp")}
+                      alt="Arduino Uno R4 showing onboard RGB LED matrix"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-2"
+                    />
+                    <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">Exploring the R4&apos;s LED matrix feature.</p>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  However, this is where the first significant roadblocks emerged. Several potential suppliers quoted delivery times stretching 6-10 weeks, extending well beyond my project window. Others had minimum order quantities or high unit costs that were prohibitive for a student project budget. This sourcing challenge became a major source of early frustration. Weeks slipped by with key components still on backorder or facing customs delays. By the time week 7 arrived, the stark reality was that the only significant piece of hardware I had received was the Arduino Uno R4 WiFi itself, and even its delivery had been delayed. The ambitious mmWave radar project, so carefully planned, was now logistically impossible within the remaining timeframe.
+                </p>
+              </section>
+
+              <section>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">Challenges & Pivot</h3>
+                <p className="mb-4">
+                  With the mmWave sensor definitively out of reach, I attempted a rapid pivot using the hardware I had: the Arduino Uno R4 WiFi. This board features a novel onboard 12x8 RGB LED matrix, which seemed like an interesting platform for exploring embedded visual displays and basic animations. My revised, much simpler goal became creating a small application to showcase patterns or simple graphics on this matrix. However, this plan quickly hit another wall. I encountered persistent, critical issues establishing a stable serial connection between the Arduino board and my development computer (a Windows machine). Despite diligently working through standard troubleshooting steps – reinstalling drivers, trying different USB cables and ports, updating the Arduino IDE, checking device manager settings, and even attempting firmware recovery modes – I could not get the board to be reliably recognized for programming uploads. Days were spent wrestling with cryptic error messages and connection timeouts.
+                </p>
+                <div className="my-6">
+                  <div className="h-64 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/arduino_failure_img1.webp")}
+                      alt="Screenshot showing Arduino IDE connection errors"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-2"
+                    />
+                    <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">Frustrating hours spent debugging Arduino IDE connectivity.</p>
+                  </div>
+                </div>
+                <p className="mb-4">
+                  The project clock was now alarmingly close to zero. With only about a week remaining in the Discovery Project period and facing insurmountable roadblocks with the Arduino R4, I needed a functional hardware platform immediately. Thankfully, a classmate generously lent me their mbed NXP LPC1768 development board. This was a familiar and known-reliable platform from previous coursework, equipped with standard peripherals and supported by a stable online compiler environment. This loan provided a crucial lifeline, allowing for one final pivot to a project that could realistically be completed in the last few days.
+                </p>
+                 <div className="my-6">
+                  <div className="h-64 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/mbed_part_img.webp")}
+                      alt="Close-up of the mbed NXP LPC1768 microcontroller board"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-2"
+                    />
+                     <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">The reliable mbed NXP LPC1768 board that saved the project.</p>
+                 </div>
+                </div>
+              </section>
+
+              <section>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">The Outcome: Morse Code Converter</h3>
+                <p className="mb-4">
+                  Embracing the final pivot with the borrowed mbed board and extremely limited time, I selected a practical and achievable project: a functional Morse code converter. The concept was straightforward yet required careful implementation: accept standard English text input via a serial terminal connection from a computer, translate each character into its corresponding Morse code representation, and then output the code visually by blinking one of the mbed board&apos;s built-in LEDs according to the correct timing conventions.
+                </p>
+                <p className="mb-4">
+                  Development took place rapidly using the convenient mbed online compiler and its C++ libraries. The core logic involved creating a mapping structure (likely a switch-case statement or an array lookup) to associate each letter (A-Z) and number (0-9) with its unique sequence of dots and dashes (represented as strings or character arrays). A separate function was crucial for handling the output: it iterated through the dot/dash sequence for a given character and controlled the mbed&apos;s onboard LED (using the `DigitalOut` library). Precision timing was key here; I implemented delays based on a defined &apos;dot&apos; duration (e.g., 200ms), ensuring dashes were three times as long, inter-element gaps within a letter were one dot duration, gaps between letters were three dot durations, and gaps between words (spaces) were seven dot durations. Serial communication (`Serial` library) was used to receive the input text string from the terminal.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                  <div className="h-80 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/code_snippet1.webp")}
+                      alt="C++ code snippet showing Morse character mapping"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                    <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">Snippet: Mapping characters to Morse sequences.</p>
+                  </div>
+                  <div className="h-80 relative bg-gray-200 rounded-lg overflow-hidden">
+                    <Image 
+                      src={getImagePath("/images/projects/discovery_project/code_snippet2.webp")}
+                      alt="C++ code snippet showing LED blinking logic with timing"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                    
+                    <p className="text-center text-sm text-gray-600 absolute bottom-1 w-full bg-white bg-opacity-75">Snippet: Implementing timed LED blinking for dots/dashes.</p>
+                  </div>
+                </div>
+                 <p className="mb-4">
+                  Despite the tumultuous journey – from the ambitious mmWave radar concept through procurement nightmares and Arduino failures – I successfully designed, coded, debugged, and demonstrated the functional Morse code converter within the final week. This salvaged project provided valuable hands-on practice in embedded C++ programming on the mbed platform, interfacing with hardware peripherals like LEDs, handling serial communication protocols, and implementing precise timing control. More importantly, the entire 8-week Discovery Project saga became an intense lesson in real-world engineering challenges: the critical importance of contingency planning, the necessity of adaptability when facing unforeseen roadblocks, rapid problem-solving under pressure, and the crucial skill of realistically assessing constraints to pivot towards a deliverable solution. While far from the complex system initially envisioned, the Morse code converter represented a successful navigation of significant adversity and a testament to perseverance.
+                </p>
+              </section>
+
+              <section>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-3">Demonstrations</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="text-lg font-medium text-gray-700 mb-2">Demo 1</h4>
+                    <video controls className="w-full rounded-lg shadow-md">
+                      <source src={getImagePath("/videos/projects/discovery_project/demo_1.mov")} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-medium text-gray-700 mb-2">Demo 2</h4>
+                    <video controls className="w-full rounded-lg shadow-md">
+                      <source src={getImagePath("/videos/projects/discovery_project/demo_2.mov")} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </section>
+
             </div>
           </motion.div>
 
